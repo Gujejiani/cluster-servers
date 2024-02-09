@@ -1,0 +1,12 @@
+# Real-Time Clustered Socket.io Application
+
+This application utilizes Node.js clustering and Socket.io to create a scalable and high-performance real-time communication system. It leverages the cluster module to distribute incoming connections among multiple worker processes, maximizing server utilization and concurrency.
+
+## Features
+
+- **Clustering:** Utilizes Node.js cluster module to spawn multiple worker processes, each handling a portion of the incoming traffic.
+- **Socket.io Integration:** Implements Socket.io for real-time bidirectional communication between clients and the server.
+- **Sticky Sessions:** Ensures that WebSocket connections are consistently routed to the same worker process using sticky sessions for enhanced performance and session persistence.
+- **Scalability:** Easily scales to utilize all available CPU cores, increasing throughput and handling concurrent connections efficiently.
+- **Customizable Configuration:** Offers options for load balancing methods, serialization settings, and CORS configuration to adapt to various deployment scenarios.
+
